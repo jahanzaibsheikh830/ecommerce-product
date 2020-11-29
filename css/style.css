@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;   
+}
+.clear{
+    clear: both;
+}
+header{
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    position: fixed;
+}
+.logo{
+    float: left;
+    width: 40%;
+    line-height: 80px;
+}
+.logo h1{
+    color: #000000;
+}
+.nav{
+    width: 60%;
+    float: right;
+}
+.nav ul{
+    float: right;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 27px 20px;
+    line-height: 80px;
+    color: #000000;
+}
+.slider{
+    background-image: url('./../images/slide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 200px 0;
+}
+.slider-content{
+    text-align: center;
+    padding-top: 200px;
+}
+.slider-content h1{
+    color: #fff;
+    font-size: 60px;
+}
+.slider-content a{
+    border: 1px solid #fff;
+    padding: 15px 40px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fff;
+}
+.slider-content a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.col-4{
+    float: left;
+    width: 25%;
+}
+.product{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 38%;
+    font-size: 30px;
+  }
+  .card .pro {
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+    margin-top: 10px;
+  }  
+  .card span{
+      width: 20%;
+      display: inline-block;
+      font-size: 24px;
+  }
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .cart-summary {
+    position: relative;
+    width: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.cart-summary .cart-content {
+    padding: 30px;
+}
+.cart-summary .cart-content h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+p .check,
+.check {
+    float: right;
+}
+ h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 12px;
+    border-top: 1px solid #dddddd;
+    margin: 0;
+}
+.cart-summary .cart-btn button {
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 15px 40px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.cart-summary .cart-btn button:hover{
+    background-color: black;
+    color: #fff;
+}
+footer{
+    background-color: black;
+    /* padding: 50px 0 100px 0; */
+    height: 200px;
+    margin-top: 50px;
+}
+.col-2{
+    float: left;
+    width: 50%;
+    color: #fff !important;
+    padding-left: 30px;
+}
+.col-2 h2{
+    line-height: 90px;
+}
+.foot-nav ul li{
+    display: inline;
+}
+.foot-nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 27px 20px;
+    line-height: 80px;
+    color: #ffffff;
+}
+.foot-nav input{
+    width: 60%;
+    padding: 15px 0px 15px 10px;
+    font-size: 20px;
+}
+.foot-nav button{
+    width: 30%;
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>E-Store</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <section class="slider" id="home">
+        <div class="container">
+            <div class="slider-content">
+                <h1>Daily OutFit Collection</h1><br><br>
+                <a href="#product">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 32px;">Featured Products</h2><br><br>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/t1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h2>Brown Trouser</h2>
+                    <span class="price">499</span><span>PKR</span>
+                    <p>New Stylish 6 Pocket Cargo Pants For Men Attractive Stretchable</p>
+                    <p>
+                        <button onclick="decrease(this)">-</button>
+                        <span style="height: 30px;">0</span>
+                        <button onclick="increase(this)">+</button>
+                        <button class="pro" onclick="addItem(this)">Add Product</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/t2.jpg" alt="Denim Jeans" style="width:100%">
+                    <h2>Panelling Trouser</h2>
+                    <span class="price">599</span><span>PKR</span>
+                    <p>Stylish Interlock Contrast Panelling Trouser For Men</p>
+                    <p>
+                        <button onclick="decrease(this)">-</button>
+                        <span style="height: 30px;">0</span>
+                        <button onclick="increase(this)">+</button>
+                        <button class="pro" onclick="addItem(this)">Add Product</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/t3.jpg" alt="Denim Jeans" style="width:100%">
+                    <h2>6 Pockets Trouser</h2>
+                    <span class="price">449</span><span>PKR</span>
+                    <p>6 Pocket Stretchable Cargo Black In Color For Men</p>
+                    <p>
+                        <button onclick="decrease(this)">-</button>
+                        <span style="height: 30px;">0</span>
+                        <button onclick="increase(this)">+</button>
+                        <button class="pro" onclick="addItem(this)">Add Product</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/t4.jpg" alt="Denim Jeans" style="width:100%">
+                    <h2>Black Trouser</h2>
+                    <span class="price">699</span><span>PKR</span>
+                    <p>Best Quality Cargo Stretchable For Men</p>
+                    <p>
+                        <button onclick="decrease(this)">-</button>
+                        <span>0</span>
+                        <button onclick="increase(this)">+</button>
+                        <button class="pro" onclick="addItem(this)">Add Product</button>
+                    </p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="cart-summary">
+                    <div class="cart-content" id="cart-content">
+                        <h1>Cart Summary</h1>
+
+                    </div>
+                    <div>
+                        <h4>Grand Total<span class="check" id="total"></span></h4>
+                    </div>
+                    <div class="cart-btn">
+                        <button onclick="checOut()">Checkout</button>
+                    </div>
+                </div>
+    </section>
+
+    <!-- <section class="product">
+        <div class="container">
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/s1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans..</p>
+                    <p><button onclick="addProduct(this)">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/s2.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans..</p>
+                    <p><button onclick="addProduct(this)">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/s3.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans..</p>
+                    <p><button onclick="addProduct(this)">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./images/s4.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans..</p>
+                    <p><button onclick="addProduct(this)">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section> -->
+
+    <footer id="contact">
+        <div class="container">
+            <div class="col-2">
+                <h2>E-Store</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis illo, porro voluptatem vero hic
+                    sed ab unde nihil doloremque ullam, ipsa facilis impedit laudantium a dolore recusandae voluptates
+                    atque! Quia!</p>
+            </div>
+            <div class="col-2">
+                <div class="foot-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#product">Products</a></li>
+                        <li><a href="#cart">Cart</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <form action="">
+                        <input type="text" placeholder="Subscribe">
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <hr>
+
+
+
+
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
